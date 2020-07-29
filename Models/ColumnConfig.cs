@@ -75,10 +75,10 @@ namespace CodeGenerator.Models
                         _csType = "int";
                         break;
                     case "System.UInt32":
-                        _csType = "uint";
+                        _csType = "int";
                         break;
                     case "System.Int64":
-                        _csType = "ulong";
+                        _csType = "long";
                         break;
                     case "System.Object":
                         _csType = "object";
