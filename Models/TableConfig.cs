@@ -44,6 +44,7 @@ namespace CodeGenerator.Models
                 if (ColumnConfig == null) return dict;
                 foreach (var item in ColumnConfig)
                 {
+                    if (item.ColumnName == "Id") continue; //丢弃ID
                     dict = new Dictionary<string, object>();
                     dict.Add("ColumnName", item.ColumnName);
                     dict.Add("ColumnNamePrefix", item.ColumnNamePrefix);
